@@ -529,16 +529,16 @@
                           &kp P       &kp W &kp R       &kp A &kp F 
                           &kp D       &kp T &kp H       &kp E &kp O 
                           &kp Y       &kp S &kp N       &kp I &kp U 
-                &sk RSHIFT &kp ENTER        &to SYMBOL        &to NUMBER &kp SPACE
+                &sk RSHIFT &kp ENTER        &to NUMBER        &to SYMBOL &kp SPACE
             >;
         };
 
         number_layer {
             bindings = <
-                            &kp MINUS         &kp N7 &kp N8     &kp N9 &kp SLASH
-                            &kp PLUS          &kp N4 &kp N5     &kp N6 &kp ASTERISK
-                            &kp BACKSPACE     &kp N1 &kp N2     &kp N3 &kp N0
-                &trans      &trans      &to SYMBOL        &to DEFAULT       &kp SPACE
+                            &kp MINUS         &kp N7  &kp N8  &kp N9    &kp SLASH
+                            &kp PLUS          &kp N4  &kp N5  &kp N6    &kp ASTERISK
+                            &kp BACKSPACE     &kp N1  &kp N2  &kp N3    &kp PERIOD
+                &kp ENTER   &to SYMBOL                &kp N0            &to DEFAULT       &kp SPACE
             >;
         }; 
 
