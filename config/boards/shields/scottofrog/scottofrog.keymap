@@ -207,7 +207,7 @@
             key-positions = <19 5>;
             bindings = <&kp CARET>;
             layers = <SYMBOL>;
-        }; 
+        };
 
         symbol_grave_combo {
             timeout-ms = <COMBO_TIMEOUT>;
@@ -242,7 +242,7 @@
             key-positions = <19 10>;
             bindings = <&kp RIGHT_BRACE>;
             layers = <SYMBOL>;
-        }; 
+        };
 
         // Number combos
         number_f7_combo {
@@ -469,67 +469,67 @@
             key-positions = <18 4>;
             bindings = <&kt LOCKING_NUM>;
             layers = <SYMBOL>;
-        }; 
+        };
 
         special_left_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 5>;
             bindings = <&kp LEFT_ARROW>;
             layers = <SYMBOL>;
-        }; 
+        };
 
         special_left_control_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 6>;
             bindings = <&kt LCTRL>;
             layers = <SYMBOL>;
-        };  
+        };
 
         special_left_alt_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 7>;
             bindings = <&kt LALT>;
             layers = <SYMBOL>;
-        }; 
+        };
 
         special_right_arrow_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 9>;
             bindings = <&kp RIGHT_ARROW>;
             layers = <SYMBOL>;
-        };  
+        };
 
         special_windows_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 10>;
             bindings = <&kt LGUI>;
             layers = <SYMBOL>;
-        };  
+        };
 
         special_application_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 11>;
             bindings = <&kt K_APP>;
             layers = <SYMBOL>;
-        };       
+        };
 
         special_shift_lock_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <18 19>;
             bindings = <&kt RSHIFT>;
             layers = <DEFAULT>;
-        };          
+        };
     };
- 
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                          &kp P       &kp W &kp R       &kp A &kp F 
-                          &kp D       &kp T &kp H       &kp E &kp O 
-                          &kp Y       &kp S &kp N       &kp I &kp U 
-                &sk RSHIFT &kp ENTER        &to NUMBER        &to SYMBOL &kp SPACE
+                             &kp P       &kp W    &kp R       &kp A   &kp F
+                             &kp D       &kp T    &kp H       &kp E   &kp O
+                             &kp Y       &kp S    &kp N       &kp I   &kp U
+                &kp RSHIFT   &kp TAB     &kp ESC              &kp LCTRL       &kp SPACE
             >;
         };
 
@@ -540,31 +540,31 @@
                             &kp BACKSPACE     &kp N1  &kp N2  &kp N3    &kp PERIOD
                 &kp ENTER   &to SYMBOL                &kp N0            &to DEFAULT       &kp SPACE
             >;
-        }; 
+        };
 
         symbol_layer {
             bindings = <
                           &kp SEMICOLON     &kp COLON        &kp ASTERISK         &kp AMPERSAND    &kp QUESTION
                           &kp UNDERSCORE    &kp AT           &kp MINUS            &kp EXCLAMATION  &kp SLASH
-                          &kp LEFT_BRACE    &kp LEFT_BRACKET &kp LEFT_PARENTHESIS &kp LESS_THAN    &kp DOUBLE_QUOTES 
+                          &kp LEFT_BRACE    &kp LEFT_BRACKET &kp LEFT_PARENTHESIS &kp LESS_THAN    &kp DOUBLE_QUOTES
                 &trans    &trans                             &to DEFAULT                           &to NUMBER         &kp SPACE
             >;
-        }; 
-        
+        };
+
         settings_layer {
             bindings = <
                             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-                            &none        &none        &none        &none        &none 
-                            &kp P        &none        &sys_reset   &none        &none 
+                            &none        &none        &none        &none        &none
+                            &kp P        &none        &sys_reset   &none        &none
                 &bootloader &none                     &none                     &none        &bt BT_CLR
             >;
         };
 
         lock_layer {
             bindings = <
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
-                      &none &none &none &none &none 
+                      &none &none &none &none &none
+                      &none &none &none &none &none
+                      &none &none &none &none &none
                 &none &none       &none       &none       &none
             >;
         };
